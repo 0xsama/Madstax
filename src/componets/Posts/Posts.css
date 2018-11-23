@@ -1,0 +1,85 @@
+.post {
+  background-color: #212529;
+  color: #e9ecef;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 120px 2fr;
+  grid-template-rows: 120px;
+  grid-gap: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.thumbnail {
+  margin: auto;
+  border-radius: 5px;
+  padding: 5px;
+  background: white;
+}
+
+.thumbnail img {
+  vertical-align: middle;
+  width: 95px;
+  height: 95px;
+  border-radius: 5px;
+}
+
+.postDetails {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.postDetails a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.postDetails h2,
+p {
+  margin: 0;
+}
+
+.postDetails h2 {
+  color: #e03131;
+  align-self: center;
+  font-weight: 700;
+}
+
+.postDetails p {
+  display: inline-block;
+  margin-right: 3px;
+  font-size: 0.8rem;
+}
+
+.post-tags {
+  align-self: end;
+}
+
+.post-tags p,
+a {
+  display: inline-block;
+}
+
+.post-tags a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #f8f9fa;
+  background-color: #343a40;
+  padding: 5px 8px;
+  border-radius: 5pt;
+  margin-left: 5px;
+}
+
+.post-tags a:visited {
+  text-decoration: none;
+}
+
+.post-tags a:hover {
+  text-decoration: none;
+  background-color: #495057;
+}
+
+.post-tags a:active {
+  text-decoration: none;
+}

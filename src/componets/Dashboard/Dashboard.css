@@ -1,0 +1,162 @@
+.dashboard {
+  padding: 1.5rem;
+}
+
+.post-form-container {
+  padding: 50px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #212529;
+  color: #e9ecef;
+  display: grid;
+  justify-items: center;
+}
+
+.post-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 16px;
+  justify-items: left;
+  align-items: center;
+}
+
+.post-form select {
+  grid-column: 2 / 3;
+  width: 100%;
+  font-size: 13px;
+}
+
+.post-form-input {
+  width: 100%;
+  grid-column: 2 / 3;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.post-button {
+  grid-column: 2 / 3;
+  width: 100%;
+  font-size: 13px;
+}
+
+.post-form label {
+  grid-column: 1 / 2;
+}
+
+button {
+  cursor: pointer;
+  color: #f8f9fa;
+  background-color: #e03131;
+  border: 1px solid #c92a2a;
+  border-radius: 5px;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  line-height: 1.42857143;
+}
+
+input,
+select {
+  border-radius: 5px;
+  border: 1px solid #343a40;
+  padding: 6px;
+}
+
+.react-tagsinput {
+  grid-column: 2 / 3;
+  border: 1px solid #343a40;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.react-tagsinput--focused {
+  border-color: #ffe3e3;
+}
+
+.react-tagsinput-tag {
+  background-color: #c92a2a;
+  border-radius: 2px;
+  border: 1px solid #e03131;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.react-tagsinput-input {
+  width: 100%;
+}
+
+.react-tagsinput-remove {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.react-tagsinput-tag a::before {
+  content: " ×";
+}
+
+.dashboard-posts-list {
+  display: grid;
+  background-color: #343a40;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.dashboard-top-panel {
+  display: grid;
+  grid-template-columns: 1fr 98px;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #212529;
+  color: #ced4da;
+  padding: 7px 10px;
+}
+
+.dashboard-top-panel h3 {
+  margin: 0;
+  color: #e9ecef;
+}
+
+.edit-post {
+  background-color: #212529;
+  color: #ced4da;
+  padding: 7px 10px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 30px auto 50px 40px;
+  grid-gap: 5px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.edit-post img {
+  width: 20px;
+  height: 20px;
+}
+
+.edit-button {
+  grid-column: 3 / 4;
+}
+
+.delete-button {
+  grid-column: 4 / 5;
+}
+
+.update-button {
+  grid-column: 2;
+}
+
+.fas {
+  font-weight: 200 !important;
+}
+
+@media screen and (max-width: 515px) {
+  .dashboard {
+    padding: 0;
+  }
+}

@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #343a40;
+  font-family: "Open Sans", sans-serif;
+  min-width: 350px;
+}
+
+.App {
+}
+
+h1 {
+  margin: 0;
+}
+
+.Header {
+  background-color: #212529;
+  padding: 1.5rem 2rem;
+  vertical-align: middle;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-link {
+  justify-self: end;
+}
+
+.dashboard-link a {
+  font-size: 0.8rem;
+  color: #e9ecef;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  cursor: pointer;
+  margin: auto 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo h1 {
+  color: #e9ecef;
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.loader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  justify-content: center;
+}
+
+.posts-list {
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 515px) {
+  .Header {
+    grid-template-columns: 1fr 200px 1fr;
+    justify-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+
+  .dashboard-link {
+  }
+
+  .posts-list {
+    /* margin-top: 10px; */
+    padding: 0;
+    grid-template-columns: 50px 2fr;
+  }
+  .post {
+    margin: 3px 0;
+    grid-gap: 0;
+  }
+  .postDetails h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .postDetails h2 {
+    font-size: 1rem;
+  }
+}
